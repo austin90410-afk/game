@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火柴人跳躍遊戲</title>
+    <link rel="stylesheet" href="恐龍小遊戲.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="stats">
+            <span>分數: <span id="score">0</span></span>
+            <span>速度: <span id="speed">5</span></span>
+            <span>最高分: <span id="best-score">0</span></span>
+        </div>
+        <canvas id="game-canvas" width="800" height="300"></canvas>
+        <div id="controls">
+            <button id="jump-btn">跳</button>
+            <button id="duck-btn">蹲</button>
+        </div>
+        <div id="game-over" style="display: none;">
+            <h2>遊戲結束</h2>
+            <p>最終分數: <span id="final-score">0</span></p>
+            <p id="record-msg"></p>
+            <button id="restart-btn">重新開始</button>
+        </div>
+    </div>
+    <script src="恐龍小遊戲.js"></script>
+</body>
+</html>
